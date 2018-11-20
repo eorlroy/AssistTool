@@ -351,7 +351,7 @@ namespace AssistTool
         /// <param name="msg"></param>
         private void ShowAndClose(string msg)
         {
-            MessageBox.Show(msg);
+            MessageBox.Show(msg,"失败");
             this.CloseForm();
         }
         /// <summary>
