@@ -10,3 +10,15 @@ D:\Works\csharp\AssistTool\AssistTool\obj\Release\AssistTool.csproj.GenerateReso
 D:\Works\csharp\AssistTool\AssistTool\obj\Release\AssistTool.csproj.CoreCompileInputs.cache
 D:\Works\csharp\AssistTool\AssistTool\obj\Release\AssistTool.exe
 D:\Works\csharp\AssistTool\AssistTool\obj\Release\AssistTool.pdb
+D:\Works\gitHub\AssistTool\AssistTool\bin\Release\AssistTool.exe.config
+D:\Works\gitHub\AssistTool\AssistTool\bin\Release\AssistTool.exe
+D:\Works\gitHub\AssistTool\AssistTool\bin\Release\AssistTool.pdb
+D:\Works\gitHub\AssistTool\AssistTool\bin\Release\Newtonsoft.Json.dll
+D:\Works\gitHub\AssistTool\AssistTool\bin\Release\Newtonsoft.Json.xml
+D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.csprojResolveAssemblyReference.cache
+D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.IndexForm.resources
+D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.Properties.Resources.resources
+D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.csproj.GenerateResource.Cache
+D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.csproj.CoreCompileInputs.cache
+D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.exe
+D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.pdb
