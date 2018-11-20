@@ -62,6 +62,9 @@
     <Compile Include="IOHelper.cs" />
     <Compile Include="JsonHelper.cs" />
     <Compile Include="Model\AccountConfig.cs" />
+    <Compile Include="Model\LoginResult.cs" />
+    <Compile Include="Model\ReceiveData.cs" />
+    <Compile Include="Model\SystemConfig.cs" />
     <Compile Include="Model\ThreadConfig.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,8 +83,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Account.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="System.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Iconleak-Atrous-Console.ico" />

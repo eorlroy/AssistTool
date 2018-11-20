@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using System.Net;
+using System.Threading;
 
 namespace AssistTool.Model
 {
@@ -21,12 +23,16 @@ namespace AssistTool.Model
         /// </summary>
         public int FinishTaskNum { get; set; }
         /// <summary>
-        /// 是否空闲
+        /// 线程令牌
         /// </summary>
-        public bool Idle { get; set; }
+        public CancellationToken Token { get; set; }
         /// <summary>
         /// 消息池
         /// </summary>
         public Queue Message { get; set; }
+        /// <summary>
+        /// Cookie值
+        /// </summary>
+        public CookieContainer Cookies { get; set; }
     }
 }

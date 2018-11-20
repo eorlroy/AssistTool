@@ -8,6 +8,10 @@
         /// </summary>
         public static readonly string ROOT_DIRECTORY = System.Environment.CurrentDirectory;
         /// <summary>
+        /// 系统配置文件
+        /// </summary>
+        public static readonly string SYSTEM_CONFIG = ROOT_DIRECTORY + "\\System.json";
+        /// <summary>
         /// 账户配置文件
         /// </summary>
         public static readonly string ACCOUNT_CONFIG = ROOT_DIRECTORY + "\\Account.json";

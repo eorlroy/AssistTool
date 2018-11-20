@@ -1,0 +1,5 @@
+﻿{
+  "waitTime": 10, /*等待时间[分钟]*/
+  "loginUrl": "https://biz.gomepay.com/loginWalletBiz", /*登录地址*/
+  "uploadUrl": "https://biz.gomepay.com/recharge/offline" /*上传地址*/
+}

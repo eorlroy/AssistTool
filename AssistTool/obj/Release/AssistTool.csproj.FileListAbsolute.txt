@@ -22,3 +22,5 @@ D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.csproj.GenerateReso
 D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.csproj.CoreCompileInputs.cache
 D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.exe
 D:\Works\gitHub\AssistTool\AssistTool\obj\Release\AssistTool.pdb
+D:\Works\gitHub\AssistTool\AssistTool\bin\Release\Account.json
+D:\Works\gitHub\AssistTool\AssistTool\bin\Release\System.json

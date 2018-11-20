@@ -9,6 +9,10 @@ namespace AssistTool.Model
     public class AccountConfig
     {
         /// <summary>
+        /// 商户ID
+        /// </summary>
+        public string Mid { get; set; }
+        /// <summary>
         /// 邮箱
         /// </summary>
         public string Email { get; set; }
