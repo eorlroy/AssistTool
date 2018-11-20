@@ -16,7 +16,7 @@ namespace AssistTool
         private static Model.SystemConfig _systemConfig = null;//系统配置
         private static Stack<Model.AccountConfig> _stack = null;//任务堆栈
         private static Model.ThreadConfig _busThreadConfig = new Model.ThreadConfig();//总线任务
-        private static List<Model.ThreadConfig> _threadConfigList = new List<Model.ThreadConfig>();//不需要线程安全的
+        private static List<Model.ThreadConfig> _threadConfigList = new List<Model.ThreadConfig>();//任务集合
         private static Dictionary<string, Model.AccountConfig> _accountConfigDic = new Dictionary<string, Model.AccountConfig>();//常驻内存
 
         public IndexForm()
