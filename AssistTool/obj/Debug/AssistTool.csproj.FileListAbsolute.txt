@@ -1,0 +1,12 @@
+D:\Works\csharp\AssistTool\AssistTool\bin\Debug\AssistTool.exe.config
+D:\Works\csharp\AssistTool\AssistTool\bin\Debug\AssistTool.exe
+D:\Works\csharp\AssistTool\AssistTool\bin\Debug\AssistTool.pdb
+D:\Works\csharp\AssistTool\AssistTool\obj\Debug\AssistTool.csprojResolveAssemblyReference.cache
+D:\Works\csharp\AssistTool\AssistTool\obj\Debug\AssistTool.IndexForm.resources
+D:\Works\csharp\AssistTool\AssistTool\obj\Debug\AssistTool.csproj.GenerateResource.Cache
+D:\Works\csharp\AssistTool\AssistTool\obj\Debug\AssistTool.csproj.CoreCompileInputs.cache
+D:\Works\csharp\AssistTool\AssistTool\obj\Debug\AssistTool.exe
+D:\Works\csharp\AssistTool\AssistTool\obj\Debug\AssistTool.pdb
+D:\Works\csharp\AssistTool\AssistTool\bin\Debug\Newtonsoft.Json.dll
+D:\Works\csharp\AssistTool\AssistTool\bin\Debug\Newtonsoft.Json.xml
+D:\Works\csharp\AssistTool\AssistTool\obj\Debug\AssistTool.Properties.Resources.resources
