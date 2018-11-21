@@ -123,8 +123,8 @@ namespace AssistTool
             {//执行停止任务
                 ActionButton.Text = Caches.BUTTON_WAIT_TXT;
                 Caches.RunFlag = false;
-                Business.TheThread.StopTask();
-                ActionButton.Text = Caches.BUTTON_ACTION_TXT;
+                //Business.TheThread.StopTask();
+                //ActionButton.Text = Caches.BUTTON_ACTION_TXT;
             }
         }
 
@@ -150,7 +150,15 @@ namespace AssistTool
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (Caches.RunFlag)
+            {
 
+            }
+            else
+            {
+                Business.TheThread.StopTask();
+                ActionButton.Text = Caches.BUTTON_ACTION_TXT;
+            }
         }
         /// <summary>
         /// 展示信息并关闭程序
