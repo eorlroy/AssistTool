@@ -116,8 +116,8 @@ namespace AssistTool
             if (string.Equals(ActionButton.Text, Caches.BUTTON_ACTION_TXT))
             {//执行任务
                 ActionButton.Text = Caches.BUTTON_STOP_TXT;
-                //Business.TheThread.ActionTask();
                 Caches.RunFlag = true;
+                //Business.TheThread.ActionTask();
             }
             else
             {//执行停止任务
@@ -152,7 +152,7 @@ namespace AssistTool
         {
             if (Caches.RunFlag)
             {
-
+                Business.TheThread.ActionTask();
             }
             else
             {

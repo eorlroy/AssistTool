@@ -88,12 +88,39 @@ namespace AssistTool.Business
 
         }
         /// <summary>
-        /// 规划执行步骤
+        /// 规划执行步骤(因为循环操作,所以步骤中不包含END)
         /// </summary>
         /// <param name="eaction"></param>
-        internal static void StepNext(ref Model.ThreadConfig.EAction eaction)
+        internal static Model.ThreadConfig.EAction StepNext(Model.ThreadConfig.EAction eaction)
         {
-            //Model.ThreadConfig.EAction result = Model.ThreadConfig.EAction.none;
+            Model.ThreadConfig.EAction result = eaction;
+
+            if (eaction == Model.ThreadConfig.EAction.none)
+            {
+                result = Model.ThreadConfig.EAction.login;
+            }
+            else if (eaction == Model.ThreadConfig.EAction.login)
+            {
+                result = Model.ThreadConfig.EAction.query;
+            }
+            else if (eaction == Model.ThreadConfig.EAction.query)
+            {
+                result = Model.ThreadConfig.EAction.submit;
+            }
+            else if (eaction == Model.ThreadConfig.EAction.submit)
+            {
+                result = Model.ThreadConfig.EAction.notice;
+            }
+            else if (eaction == Model.ThreadConfig.EAction.notice)
+            {
+                result = Model.ThreadConfig.EAction.refresh;
+            }
+            else if (eaction == Model.ThreadConfig.EAction.refresh)
+            {
+                result = Model.ThreadConfig.EAction.query;
+            }
+
+            return result;
         }
         #endregion
     }
