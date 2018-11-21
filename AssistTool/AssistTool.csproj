@@ -52,6 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\Main.cs" />
+    <Compile Include="Business\Config.cs" />
+    <Compile Include="Business\TheThread.cs" />
+    <Compile Include="Caches.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -59,8 +63,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IOHelper.cs" />
-    <Compile Include="JsonHelper.cs" />
+    <Compile Include="Helper\HttpHelper.cs" />
+    <Compile Include="Helper\IOHelper.cs" />
+    <Compile Include="Helper\JsonHelper.cs" />
     <Compile Include="Model\AccountConfig.cs" />
     <Compile Include="Model\LoginResult.cs" />
     <Compile Include="Model\ReceiveData.cs" />

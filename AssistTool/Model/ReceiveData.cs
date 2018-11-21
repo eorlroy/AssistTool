@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace AssistTool.Model
 {
@@ -20,20 +21,32 @@ namespace AssistTool.Model
          * "r5_Msg":"请求成功",
          * "hmac":"2f9ae17d7f8e90a4cc03de456536cd9a"}
          * */
+        [JsonProperty(PropertyName = "r0_Cmd")]
         public string Cmd { get; set; }
+        [JsonProperty(PropertyName = "r1_MerId")]
         public string MerId{get;set;}
+        [JsonProperty(PropertyName = "r2_Code")]
         public string Code { get; set; }
+        [JsonProperty(PropertyName = "r3_OrderList")]
         public List<OrderModel> OrderList { get; set; }
+        [JsonProperty(PropertyName = "r4_Size")]
         public string Size { get; set; }
+        [JsonProperty(PropertyName = "r5_Msg")]
         public string Msg { get; set; }
+        [JsonProperty(PropertyName = "hmac")]
         public string Hmac { get; set; }
-
+        
         public class OrderModel
         {
+            [JsonProperty(PropertyName = "sourceAmount")]
             public string SourceAmount { get; set; }
+            [JsonProperty(PropertyName = "bankNo")]
             public string BankNo { get; set; }
+            [JsonProperty(PropertyName = "extInfo")]
             public string ExtInfo { get; set; }
+            [JsonProperty(PropertyName = "code")]
             public string Code { get; set; }
+            [JsonProperty(PropertyName = "mid")]
             public string Mid { get; set; }
         }
     }

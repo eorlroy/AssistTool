@@ -157,7 +157,7 @@
             this.MinimumSize = new System.Drawing.Size(711, 542);
             this.Name = "IndexForm";
             this.Text = "AssisTool";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.form_Closing);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
