@@ -12,9 +12,9 @@ namespace AssistTool.Business
         /// <summary>
         /// 查询数据
         /// </summary>
-        internal static void QueryData(string actionId)
+        internal static int QueryData(string actionId)
         {
-
+            return 0;
         }
         /// <summary>
         /// 获取

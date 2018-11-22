@@ -79,11 +79,24 @@ namespace AssistTool.Business
         }
         private static void ExecuteTask(Model.ThreadConfig.EAction eaction,string actionId)
         {
-
+            Model.ThreadConfig config = Config.GetTaskConfig(actionId);
             switch (eaction)
             {
                 case Model.ThreadConfig.EAction.login:
                     bool res = Main.Login(actionId);
+                    if (res)
+                    {
+                        config.ActionOption = Main.StepNext(eaction);
+                        config.Idle = false;
+                    }
+                    else
+                    {
+                        config.ActionOption = Model.ThreadConfig.EAction.end;
+                        config.NextRunDate = DateTime.Now.AddYears(10);
+                        config.CountTaskNum = 0;
+                        config.FinishTaskNum = 0;
+                        config.Idle = false;
+                    }
                     break;
                 case Model.ThreadConfig.EAction.query:
                     Main.QueryData(actionId);
