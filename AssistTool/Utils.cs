@@ -18,6 +18,10 @@ namespace AssistTool
             }
             return sb.ToString();
         }
+        public static int GetDateTime()
+        {
+            return int.Parse(DateTime.Now.ToString("yyyyMMddHHmmss"));
+        }
         #region 时间戳
         /// 获取时间戳
         /// </summary>

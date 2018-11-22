@@ -64,7 +64,7 @@ namespace AssistTool.Business
         /// </summary>
         internal static void RefreshCookie(string actionId)
         {
-            Model.ThreadConfig config = Caches.ThreadConfigList.Find(item => item.ID == actionId);
+            Model.ThreadConfig config = Config.GetTaskConfig(actionId);
             if (config != null)
             {
                 string url = Caches.SystemConfig.RefreshUrl;
@@ -77,7 +77,7 @@ namespace AssistTool.Business
         /// </summary>
         internal static void Submit(string actionId)
         {
-            Model.ThreadConfig config = Caches.ThreadConfigList.Find(item => item.ID == actionId);
+            Model.ThreadConfig config = Config.GetTaskConfig(actionId);
 
         }
         /// <summary>
@@ -95,29 +95,26 @@ namespace AssistTool.Business
         {
             Model.ThreadConfig.EAction result = eaction;
 
-            if (eaction == Model.ThreadConfig.EAction.none)
+            switch (eaction)
             {
-                result = Model.ThreadConfig.EAction.login;
-            }
-            else if (eaction == Model.ThreadConfig.EAction.login)
-            {
-                result = Model.ThreadConfig.EAction.query;
-            }
-            else if (eaction == Model.ThreadConfig.EAction.query)
-            {
-                result = Model.ThreadConfig.EAction.submit;
-            }
-            else if (eaction == Model.ThreadConfig.EAction.submit)
-            {
-                result = Model.ThreadConfig.EAction.notice;
-            }
-            else if (eaction == Model.ThreadConfig.EAction.notice)
-            {
-                result = Model.ThreadConfig.EAction.refresh;
-            }
-            else if (eaction == Model.ThreadConfig.EAction.refresh)
-            {
-                result = Model.ThreadConfig.EAction.query;
+                case Model.ThreadConfig.EAction.none:
+                    result = Model.ThreadConfig.EAction.login;
+                    break;
+                case Model.ThreadConfig.EAction.login:
+                    result = Model.ThreadConfig.EAction.query;
+                    break;
+                case Model.ThreadConfig.EAction.query:
+                    result = Model.ThreadConfig.EAction.submit;
+                    break;
+                case Model.ThreadConfig.EAction.submit:
+                    result = Model.ThreadConfig.EAction.notice;
+                    break;
+                case Model.ThreadConfig.EAction.notice:
+                    result = Model.ThreadConfig.EAction.refresh;
+                    break;
+                case Model.ThreadConfig.EAction.refresh:
+                    result = Model.ThreadConfig.EAction.query;
+                    break;
             }
 
             return result;

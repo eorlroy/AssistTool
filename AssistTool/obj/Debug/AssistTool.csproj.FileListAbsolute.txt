@@ -10,3 +10,16 @@ D:\Works\csharp\AssistTool\AssistTool\obj\Debug\AssistTool.pdb
 D:\Works\csharp\AssistTool\AssistTool\bin\Debug\Newtonsoft.Json.dll
 D:\Works\csharp\AssistTool\AssistTool\bin\Debug\Newtonsoft.Json.xml
 D:\Works\csharp\AssistTool\AssistTool\obj\Debug\AssistTool.Properties.Resources.resources
+F:\github\AssistTool\AssistTool\bin\Debug\AssistTool.exe.config
+F:\github\AssistTool\AssistTool\obj\Debug\AssistTool.exe
+F:\github\AssistTool\AssistTool\obj\Debug\AssistTool.pdb
+F:\github\AssistTool\AssistTool\obj\Debug\AssistTool.IndexForm.resources
+F:\github\AssistTool\AssistTool\obj\Debug\AssistTool.Properties.Resources.resources
+F:\github\AssistTool\AssistTool\obj\Debug\AssistTool.csproj.GenerateResource.Cache
+F:\github\AssistTool\AssistTool\bin\Debug\Account.json
+F:\github\AssistTool\AssistTool\bin\Debug\System.json
+F:\github\AssistTool\AssistTool\bin\Debug\AssistTool.exe
+F:\github\AssistTool\AssistTool\bin\Debug\AssistTool.pdb
+F:\github\AssistTool\AssistTool\bin\Debug\Newtonsoft.Json.dll
+F:\github\AssistTool\AssistTool\bin\Debug\Newtonsoft.Json.xml
+F:\github\AssistTool\AssistTool\obj\Debug\AssistTool.csprojResolveAssemblyReference.cache

@@ -152,7 +152,7 @@ namespace AssistTool
         {
             if (Caches.RunFlag)
             {
-                Business.TheThread.ActionTask();
+                Business.TheThread.StartTask();
             }
             else
             {

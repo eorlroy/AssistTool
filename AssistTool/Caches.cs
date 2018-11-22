@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.Concurrent;
+using System.Collections.Generic;
 
 namespace AssistTool
 {
@@ -10,9 +11,8 @@ namespace AssistTool
         internal const string BUTTON_WAIT_TXT = "等待";
         internal static Model.SystemConfig SystemConfig = null;//系统配置
         internal static Stack<Model.AccountConfig> TheStack = null;//任务堆栈
-        internal static Model.ThreadConfig BusThreadConfig = null;//new Model.ThreadConfig();//总线任务
-        internal static List<Model.ThreadConfig> ThreadConfigList = null;//new List<Model.ThreadConfig>();//任务集合
+        internal static Model.ThreadConfig BusThreadConfig = null;//总线任务
+        internal static ConcurrentBag<Model.ThreadConfig> ThreadConfigList = null;//任务集合
         internal static Dictionary<string, Model.AccountConfig> AccountConfigDic = new Dictionary<string, Model.AccountConfig>();//常驻内存
-
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Net;
 using System.Threading;
 
@@ -13,7 +14,7 @@ namespace AssistTool.Model
         /// <summary>
         /// 时间
         /// </summary>
-        public int DateTime { get; set; }
+        public DateTime NextRunDate { get; set; }
         /// <summary>
         /// 总任务数
         /// </summary>
@@ -42,6 +43,9 @@ namespace AssistTool.Model
         /// Cookie值
         /// </summary>
         public CookieContainer Cookies { get; set; }
+        /// <summary>
+        /// 任务枚举
+        /// </summary>
         public enum EAction
         {
             none,//无(置空时使用)

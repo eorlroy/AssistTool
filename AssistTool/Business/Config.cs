@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 
 namespace AssistTool.Business
 {
@@ -46,7 +41,7 @@ namespace AssistTool.Business
         {
             if (config != null
                 && !string.IsNullOrWhiteSpace(config.ID)
-                && !Caches.ThreadConfigList.Exists(item => string.Equals(item.ID, config.ID)))
+                && ExistsTaskConfig(config.ID))
             {//如果config有效且集合无重复值,添加集合&添加总线
                 Caches.ThreadConfigList.Add(config);
                 Caches.BusThreadConfig.CountTaskNum += config.CountTaskNum;
@@ -88,7 +83,7 @@ namespace AssistTool.Business
         /// <param name="countTaskNum"></param>
         internal static void ChangeTaskConfig(string actionId, int finishTaskNum, int countTaskNum, Model.ThreadConfig.EAction eaction, CookieContainer cookies)
         {
-            Model.ThreadConfig config = Caches.ThreadConfigList.Find(item => item.ID == actionId);
+            Model.ThreadConfig config = GetTaskConfig(actionId);
             if (config != null && config != default(Model.ThreadConfig))//TOTEST
             {
                 if (finishTaskNum > 0)
@@ -112,6 +107,39 @@ namespace AssistTool.Business
                     config.ActionOption = eaction;
                 }
             }
+        }
+        internal static bool ExistsTaskConfig(string actionId)
+        {
+            bool result = false;
+            if (Caches.ThreadConfigList != null)
+            {
+                foreach (Model.ThreadConfig item in Caches.ThreadConfigList)
+                {
+                    if (string.Equals(item.ID, actionId))
+                    {
+                        result = true;
+                    }
+                    break;
+                }
+            }
+
+            return result;
+        }
+        internal static Model.ThreadConfig GetTaskConfig(string actionId)
+        {
+            Model.ThreadConfig result = null;
+            if (Caches.ThreadConfigList != null)
+            {
+                foreach (Model.ThreadConfig item in Caches.ThreadConfigList)
+                {
+                    if (string.Equals(item.ID, actionId))
+                    {
+                        result = item;
+                    }
+                    break;
+                }
+            }
+            return result;
         }
         #endregion
     }
