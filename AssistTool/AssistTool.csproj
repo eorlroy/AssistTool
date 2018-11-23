@@ -92,6 +92,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
+    <None Include="bin\Debug\AssistToolAir.zip" />
     <None Include="packages.config" />
     <None Include="System.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
